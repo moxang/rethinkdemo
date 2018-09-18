@@ -1,0 +1,58 @@
+{
+  "name": "feathers-chat",
+  "description": "this my first chat application",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "moxang",
+    "email": "moxangvaidya21@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/"
+  },
+  "engines": {
+    "node": "^10.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run eslint && npm run mocha",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "dev": "nodemon src/",
+    "start": "node src/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "dependencies": {
+    "@feathersjs/configuration": "^2.0.2",
+    "@feathersjs/errors": "^3.3.2",
+    "@feathersjs/express": "^1.2.5",
+    "@feathersjs/feathers": "^3.2.1",
+    "@feathersjs/socketio": "^3.2.4",
+    "@feathersjs/socketio-client": "^1.1.2",
+    "compression": "^1.7.3",
+    "cors": "^2.8.4",
+    "feathers-mongodb": "^3.3.0",
+    "feathers-nedb": "^3.1.0",
+    "feathers-rethinkdb": "^0.5.2",
+    "helmet": "^3.13.0",
+    "mongodb": "^3.1.4",
+    "nedb": "^1.8.0",
+    "rethinkdbdash": "^2.3.31",
+    "serve-favicon": "^2.5.0",
+    "socket.io-client": "^2.1.1",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
